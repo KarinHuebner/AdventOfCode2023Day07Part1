@@ -6,7 +6,7 @@ public class Hand implements Comparable<Hand>{
 	private int bid;
 	private int type;
 	private String sortString;
-	private int winning;
+	private int winnings;
 	
 	public Hand(String cards, int bid) {
 		this.setCards(cards);
@@ -26,14 +26,6 @@ public class Hand implements Comparable<Hand>{
 		return sortString;
 	}
 
-/**	@Override
-	public int compareTo(Hand otherHand) {
-		//Return: -1 = lower; 0 = equal;  1 = higher
-		return Integer.compare(this.getCards(), otherHand.getCards());
-		return 0;
-	}
-	*/
-	
 	public String getCards() {
 		return cards;
 	}
@@ -62,14 +54,11 @@ public class Hand implements Comparable<Hand>{
 		this.sortString= sortString;
 	}
 
-	public void setWinning(int winning) {
-		this.winning= winning;
+	public void setWinnings(int winnings) {
+		this.winnings= winnings;
 	}
 
-	public int getWinning() {
-		return winning;
+	public int getWinnings() {
+		return winnings;
 	}
-
-	
-
 }
